@@ -7,16 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9E4D66F0295CC349009F81A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4D66EF295CC349009F81A2 /* ViewController.swift */; };
 		9EF8DB56295B688F0048EA1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF8DB55295B688F0048EA1A /* AppDelegate.swift */; };
 		9EF8DB58295B688F0048EA1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF8DB57295B688F0048EA1A /* SceneDelegate.swift */; };
 		9EF8DB5A295B688F0048EA1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF8DB59295B688F0048EA1A /* ViewController.swift */; };
 		9EF8DB5F295B68900048EA1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EF8DB5E295B68900048EA1A /* Assets.xcassets */; };
 		9EF8DB62295B68900048EA1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EF8DB60295B68900048EA1A /* LaunchScreen.storyboard */; };
+		E79236E62961F05600C5717A /* PhilippViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79236E52961F05600C5717A /* PhilippViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9E4D66EF295CC349009F81A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9EF8DB52295B688F0048EA1A /* galleyRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = galleyRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EF8DB55295B688F0048EA1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EF8DB57295B688F0048EA1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +23,7 @@
 		9EF8DB5E295B68900048EA1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EF8DB61295B68900048EA1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EF8DB63295B68900048EA1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E79236E52961F05600C5717A /* PhilippViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhilippViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 		9EF8DB6A295B68E50048EA1A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9E4D66EF295CC349009F81A2 /* ViewController.swift */,
+				E79236E52961F05600C5717A /* PhilippViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,8 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EF8DB5A295B688F0048EA1A /* ViewController.swift in Sources */,
+				E79236E62961F05600C5717A /* PhilippViewController.swift in Sources */,
 				9EF8DB56295B688F0048EA1A /* AppDelegate.swift in Sources */,
-				9E4D66F0295CC349009F81A2 /* ViewController.swift in Sources */,
 				9EF8DB58295B688F0048EA1A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,12 +303,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SGUZZQKR9A;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = galleyRecipes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -332,12 +331,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SGUZZQKR9A;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = galleyRecipes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
