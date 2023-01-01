@@ -53,10 +53,10 @@ class ViewController: UIViewController {
     func tableViewConstraints() {
         view.addSubview(recipeTableView)
         NSLayoutConstraint.activate([
-            recipeTableView.topAnchor.constraint(equalTo: recipeImageView.bottomAnchor, constant: -20),
+            recipeTableView.topAnchor.constraint(equalTo: recipeImageView.bottomAnchor, constant: 20),
             recipeTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
             recipeTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
-            recipeTableView.heightAnchor.constraint(equalToConstant: 100)
+            recipeTableView.heightAnchor.constraint(equalToConstant: 200)
         ])
     }
     
@@ -74,6 +74,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "id", for: indexPath)
         // конфигурируем ячейку
         cell.textLabel?.text  = self.recipeIngredients[indexPath.row]        // возвращаем сконфигурированный экземпляр ячейки
+
         return cell
     }
     
