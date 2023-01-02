@@ -26,7 +26,16 @@ class ViewController: UIViewController {
         return tableView
     }()
     
-    let recipeIngredients = ["Butter", "Bread"]
+    var recipeIngredients = ["Butter", "Bread"]
+    
+    //Text View
+    let textViewText: UITextView = {
+       let textView = UITextView()
+        textView.text = "Text"
+        textView.translatesAutoresizingMaskIntoConstraints = false
+        return textView
+    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +45,7 @@ class ViewController: UIViewController {
         tableViewConstraints()
         recipeTableView.dataSource = self
         recipeTableView.register(UITableViewCell.self, forCellReuseIdentifier: "id")
+        textViewConstraints()
     }
     
     // MARK: - Constraints
@@ -60,6 +70,15 @@ class ViewController: UIViewController {
         ])
     }
     
+    func textViewConstraints() {
+        view.addSubview(textViewText)
+        NSLayoutConstraint.activate([
+            textViewText.topAnchor.constraint(equalTo: recipeTableView.bottomAnchor, constant: 20),
+            textViewText.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
+            textViewText.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
+            textViewText.heightAnchor.constraint(equalToConstant: 200)
+        ])
+    }
 
     
 }
@@ -72,8 +91,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "id", for: indexPath)
-        // конфигурируем ячейку
-        cell.textLabel?.text  = self.recipeIngredients[indexPath.row]        // возвращаем сконфигурированный экземпляр ячейки
+        cell.textLabel?.text  = self.recipeIngredients[indexPath.row]
 
         return cell
     }
@@ -82,3 +100,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
 //        return 90
 //    }
 }
+
+//extension ViewController: UITextViewDelegate {
+//
+//}
